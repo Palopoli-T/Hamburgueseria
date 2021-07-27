@@ -1,0 +1,485 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(black), color-stop(grey), to(lightgrey));
+  background-image: linear-gradient(to bottom, black, black, grey, lightgrey);
+  font-family: 'Staatliches', cursive;
+}
+
+div a {
+  text-decoration: none;
+  color: black;
+}
+
+.blanco {
+  color: white;
+}
+
+.HeaderFlex {
+  background-color: #0c0b0b;
+  letter-spacing: 1px;
+  padding: 5px 3px;
+  height: 18vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.imgLogo {
+  width: 250px;
+  margin-left: 120px;
+  height: 115px;
+}
+
+.logoTrans {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.logoTrans:hover {
+  width: 260px;
+  height: 125px;
+}
+
+nav {
+  width: 50%;
+}
+
+ul a {
+  text-decoration: none;
+  color: white;
+}
+
+.BarraInicio {
+  font-size: 16px;
+  text-align: center;
+  padding: 16px;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center center;
+      -ms-flex-align: center center;
+          align-items: center center;
+}
+
+.listMenu {
+  margin: 4px;
+  margin-top: 25px;
+}
+
+.footer {
+  background-color: #0c0b0b;
+  width: 100%;
+}
+
+.footer .footerDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .burgerTam {
+  width: 350px;
+  height: 150px;
+  cursor: pointer;
+}
+
+.footer ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+.footer ul .sociales {
+  font-size: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.footer p {
+  padding: 15px;
+  font-size: 25px;
+}
+
+.bannerMenu {
+  height: 600px;
+  width: 100%;
+  background-image: url("img/hamburguesamenu.jpg");
+  background-size: cover;
+  background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bannerMenu h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.bannerMenu h1 a {
+  margin-left: 36.5%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bannerMenu p {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bannerMenu h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #ca8647;
+}
+
+.secMain {
+  height: 50%;
+  width: 100%;
+}
+
+.bannerNosotros {
+  height: 600px;
+  width: 100%;
+  background-image: url("img/nosotros.jpeg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.bannerNosotros h2 a {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bannerNosotros h3 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #c48347;
+  margin-top: 3%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.bannerNosotros p {
+  font-size: 33px;
+  font-weight: 400;
+  color: white;
+  margin-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menuHamb {
+  margin: 0px;
+  padding: 0px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(grey), color-stop(grey), color-stop(lightgrey), color-stop(lightgrey), to(white));
+  background-image: linear-gradient(to bottom, black, grey, grey, lightgrey, lightgrey, white);
+  color: #921600;
+  font-size: 20px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      grid-template-areas: "none articulo1 articulo2 articulo3" "none articulo1 articulo2 articulo3" "none articulo1 articulo2 articulo3";
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.menuHamb .tituloArticle {
+  font-size: 36px;
+  color: #080808;
+  margin: 14px;
+  text-align: center;
+}
+
+.menuHamb #hamb1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  grid-area: articulo1;
+}
+
+.menuHamb #hamb1 .margenProd {
+  margin: 8px;
+}
+
+.menuHamb #hamb1 .imgHamb {
+  width: 300px;
+  height: 200px;
+  cursor: pointer;
+}
+
+.menuHamb #hamb1 .hambTrans {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.menuHamb #hamb1 .hambTrans:hover {
+  width: 320px;
+  height: 220px;
+}
+
+.menuHamb #hamb2 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
+  grid-area: articulo2;
+}
+
+.menuHamb #hamb2 .margenProd {
+  margin: 8px;
+}
+
+.menuHamb #hamb2 .imgHamb {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.menuHamb #hamb2 .hambTrans {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.menuHamb #hamb2 .hambTrans:hover {
+  width: 320px;
+  height: 220px;
+}
+
+.menuHamb #hamb3 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 4;
+  grid-area: articulo3;
+}
+
+.menuHamb #hamb3 .margenProd {
+  margin: 8px;
+}
+
+.menuHamb #hamb3 .imgHamb {
+  width: 300px;
+  height: 200px;
+  cursor: pointer;
+}
+
+.menuHamb #hamb3 .hambTrans {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.menuHamb #hamb3 .hambTrans:hover {
+  width: 320px;
+  height: 220px;
+}
+
+.menuFritas {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(grey), color-stop(grey), color-stop(lightgrey), color-stop(lightgrey), to(white));
+  background-image: linear-gradient(to top, black, grey, grey, lightgrey, lightgrey, white);
+  color: #921600;
+  font-size: 25px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "none articulo1 articulo2 articulo3" "none articulo1 articulo2 articulo3" "none articulo1 articulo2 articulo3";
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: grey;
+  display: grid;
+}
+
+.menuFritas .tituloArticle {
+  font-size: 36px;
+  color: #080808;
+  margin: 14px;
+  text-align: center;
+}
+
+.menuFritas #fritas1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  grid-area: articulo1;
+}
+
+.menuFritas #fritas1 .margenProd {
+  margin: 8px;
+}
+
+.menuFritas #fritas1 .imgHamb {
+  width: 300px;
+  height: 200px;
+  cursor: pointer;
+}
+
+.menuFritas #fritas1 .hambTrans {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.menuFritas #fritas1 .hambTrans:hover {
+  width: 320px;
+  height: 220px;
+}
+
+.menuFritas #fritas2 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
+  grid-area: articulo2;
+}
+
+.menuFritas #fritas2 .margenProd {
+  margin: 8px;
+}
+
+.menuFritas #fritas2 .imgHamb {
+  width: 300px;
+  height: 200px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.menuFritas #fritas2 .hambTrans {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.menuFritas #fritas2 .hambTrans:hover {
+  width: 320px;
+  height: 220px;
+}
+
+.menuFritas #fritas3 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 4;
+  grid-area: articulo3;
+}
+
+.menuFritas #fritas3 .margenProd {
+  margin: 8px;
+}
+
+.menuFritas #fritas3 .imgHamb {
+  width: 300px;
+  height: 200px;
+  cursor: pointer;
+}
+
+.menuFritas #fritas3 .hambTrans {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.menuFritas #fritas3 .hambTrans:hover {
+  width: 320px;
+  height: 220px;
+}
+
+.combos {
+  height: 600px;
+  width: 100%;
+  background-image: url("img/fondodepapas.jpg");
+  background-size: cover;
+  background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.secNosotros {
+  height: 85vh;
+}
+
+.secNosotros .nosotros {
+  margin-top: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.tamContac {
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  text-align: center;
+  letter-spacing: 2px;
+}
+/*# sourceMappingURL=Main.css.map */

@@ -1,0 +1,41 @@
+.HeaderFlex{
+	background-color: $colorNaranja;
+    letter-spacing: 1px;
+    padding: 5px 3px;
+    height: 18vh;
+    display: flex;
+    justify-content:space-evenly;
+} 
+    .imgLogo{               
+            width: 250px;
+            margin-left: 120px;
+            height: 115px;
+            }
+    .logoTrans{
+            transition: all 1s;
+            }
+    .logoTrans:hover{
+            width: 260px;
+            height: 125px;
+            }       
+    nav{
+        width: 50%;
+    }
+    ul a{
+            text-decoration: none;
+            color: white;
+        }      
+   .BarraInicio{
+            font-size: 16px;
+            text-align: center;
+            padding: 16px;
+            list-style-type: none;    
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center center ;
+        }
+    .listMenu{
+            margin: 4px;
+            margin-top: 25px;
+       }

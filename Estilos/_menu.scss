@@ -1,0 +1,185 @@
+.menuHamb{
+	margin: 0px;
+	padding: 0px;
+	background-image: linear-gradient(to bottom, black, grey, grey, lightgrey, lightgrey, white);
+	color: $colorMenu;
+	font-size: 20px;
+	text-align: center;
+	align-items: center;
+	display: grid;
+	justify-content: space-between;
+	grid-template-areas: 
+	"none articulo1 articulo2 articulo3"
+	"none articulo1 articulo2 articulo3"
+	"none articulo1 articulo2 articulo3"
+;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    .tituloArticle{
+        font-size: 36px;
+        color: rgb(8, 8, 8);
+        margin: 14px;
+        text-align: center;
+    }
+    #hamb1{
+        grid-area: articulo1;
+
+        .margenProd{
+            margin: 8px;
+        }
+
+        .imgHamb{
+            width: 300px;
+            height: 200px;
+            cursor: pointer;
+        }
+        .hambTrans{
+            transition: all 1s;
+        }
+        .hambTrans:hover{
+            width: 320px;
+            height: 220px;
+        }
+    }
+        #hamb2{
+        grid-area: articulo2;
+
+        .margenProd{
+            margin: 8px;
+        }
+            
+        .imgHamb{
+        width: 300px;
+        height: 200px;
+        margin: 10px;
+        cursor: pointer;
+
+         }
+         
+
+        .hambTrans{
+        transition: all 1s;
+         }
+         
+        .hambTrans:hover{
+        width: 320px;
+        height: 220px;
+         }
+    }
+    #hamb3{
+        grid-area: articulo3;
+
+        .margenProd{
+            margin: 8px;
+        }      
+        
+        .imgHamb{
+            width: 300px;
+            height: 200px;
+            cursor: pointer;
+
+         }
+        
+         .hambTrans{
+            transition: all 1s;
+        }
+       
+        .hambTrans:hover{
+            width: 320px;
+            height: 220px;
+         }
+    }
+}
+//Papas fritas
+.menuFritas{
+        background-image: linear-gradient(to top,black, grey, grey, lightgrey, lightgrey, white);
+        color: $colorMenu;
+        font-size: 25px;
+        text-align: center;
+        align-items: center;
+        display: grid;
+        grid-template-areas: 
+        "none articulo1 articulo2 articulo3"
+        "none articulo1 articulo2 articulo3"
+        "none articulo1 articulo2 articulo3";
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        background-color: grey;
+        display: grid;
+
+        .tituloArticle{
+            font-size: 36px;
+            color: rgb(8, 8, 8);
+            margin: 14px;
+            text-align: center;
+        }
+        #fritas1{
+            grid-area: articulo1;
+    
+            .margenProd{
+                margin: 8px;
+            }
+    
+            .imgHamb{
+                width: 300px;
+                height: 200px;
+                cursor: pointer;
+
+            }
+            .hambTrans{
+                transition: all 1s;
+            }
+            .hambTrans:hover{
+                width: 320px;
+                height: 220px;
+            }
+        }
+            #fritas2{
+            grid-area: articulo2;
+    
+            .margenProd{
+                margin: 8px;
+            }
+                
+            .imgHamb{
+            width: 300px;
+            height: 200px;
+            cursor: pointer;
+            margin: 10px;
+
+             }
+    
+            .hambTrans{
+            transition: all 1s;
+             }
+             
+            .hambTrans:hover{
+            width: 320px;
+            height: 220px;
+             }
+        }
+        #fritas3{
+            grid-area: articulo3;
+    
+            .margenProd{
+                margin: 8px;
+            }      
+            
+            .imgHamb{
+                width: 300px;
+                height: 200px;
+                cursor: pointer;
+
+             }
+            
+             .hambTrans{
+                transition: all 1s;
+            }
+           
+            .hambTrans:hover{
+                width: 320px;
+                height: 220px;
+            }
+
+            }
+}

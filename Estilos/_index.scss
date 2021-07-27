@@ -1,0 +1,76 @@
+//Section 1
+.bannerMenu{
+    height: 600px;
+	width: 100%;
+	background-image: url('img/hamburguesamenu.jpg');
+	background-size: cover;
+	background-position: center center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	h1{
+		font-size: 60px;
+		text-transform: uppercase;
+		font-weight: 700;
+		a{
+		margin-left: 36.5%;
+		align-items: center;
+		}	
+	}
+	p{
+		font-size: 40px;
+		text-transform: uppercase;
+		font-weight: 400;
+		display: flex;
+		justify-content: center;
+	}
+	h2{
+		font-size: 40px;
+		text-transform: uppercase;
+		font-weight: 400;
+		color: #ca8647;
+	}
+}
+//section 2
+.secMain{
+	height: 50%;
+	width: 100%;
+}
+//section 3 
+.bannerNosotros{
+	height: 600px;
+	width: 100%;
+	background-image: url('img/nosotros.jpeg');
+	background-size: cover;
+	background-position: center center;
+    
+    h2 a{
+        font-size: 50px;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-decoration: none;
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    h3{
+        font-size: 40px;
+        font-weight: 400;
+        color: #c48347;
+        margin-top: 3%;
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+    p{
+        font-size: 33px;
+        font-weight: 400;
+        color: white;
+        margin-top: 10%;
+        display:flex;
+        justify-content: center;
+    }
+
+}
