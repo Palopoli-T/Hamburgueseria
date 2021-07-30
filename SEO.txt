@@ -1,4 +1,0 @@
-SEO:
-<title> --> nombre del html/ THE BURGUER, para cada HTML
-<meta> --> keywords (unico para todos los html)
-<meta> --> description --> puse una frase unica para todos los html
