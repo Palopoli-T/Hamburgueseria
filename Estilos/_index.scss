@@ -9,6 +9,11 @@
 	justify-content: center;
 	align-items: center;
 
+	//smartphone
+	@media (max-width: 425px){
+	height: 300px;
+	}
+
 	h1{
 		font-size: 60px;
 		text-transform: uppercase;
@@ -16,7 +21,12 @@
 		a{
 		margin-left: 36.5%;
 		align-items: center;
-		}	
+		//smartphone
+		@media (max-width: 425px){
+			font-size: 45px;
+			margin-left: 35%px;
+		}
+		}
 	}
 	p{
 		font-size: 40px;
@@ -24,24 +34,49 @@
 		font-weight: 400;
 		display: flex;
 		justify-content: center;
+		//smartphone
+		@media (max-width: 425px){
+			font-size: 35px;
+		}
 	}
 	h2{
 		font-size: 40px;
 		text-transform: uppercase;
 		font-weight: 400;
 		color: #ca8647;
+		//smartphone
+		@media (max-width: 415px){
+			font-size: 25px;
+
+		}
+	}
+}
+//section 2
+.indexC{
+	height: 150%;
+	.margen{
+		margin-left: 12%;
 	}
 }
 //section 3 
 .bannerNosotros{
 	height: 600px;
 	width: 100%;
-	background-image: url('Estilos/img/nosotros.jpeg');
+	background-image: url(./img/nosotros.JPEG);
 	background-size: cover;
 	background-position: center center;
+	
+	//ipad/tablet
+	@media (min-width:425px) and (max-width: 769px){
+	height: 500px;
+	}
+	//smartphone
+	@media (max-width: 425px){
+		height: 400px;
+	}
     
     h2 a{
-        font-size: 50px;
+        font-size: 60px;
         text-transform: uppercase;
         font-weight: 700;
         text-decoration: none;
@@ -51,13 +86,24 @@
         align-items: center;
     }
     h3{
-        font-size: 40px;
+		font-size: 40px;
         font-weight: 400;
-        color: #c48347;
+        color: #55310f;
         margin-top: 3%;
         display: grid;
         justify-content: center;
         text-align: center;
+
+		//ipad/tablet
+		@media (min-width:425px) and (max-width: 769px){
+
+		}
+
+		//smartphone
+		@media (max-width: 425px){
+		font-size: 30px;	
+
+		}
     }
     p{
         font-size: 33px;
@@ -66,6 +112,11 @@
         margin-top: 10%;
         display:flex;
         justify-content: center;
+		//smartphone
+		@media (max-width: 425px){
+			margin-left: 20px;
+			text-align: center;
+		}
     }
 
 }

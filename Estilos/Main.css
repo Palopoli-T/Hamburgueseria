@@ -31,19 +31,13 @@ div a {
           justify-content: space-between;
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 425px) and (max-width: 769px) {
   .headerFlex {
-    height: 25vh;
+    height: 17vh;
   }
 }
 
-@media (min-width: 415px) and (max-width: 769px) {
-  .headerFlex {
-    height: 20vh;
-  }
-}
-
-@media (max-width: 415px) {
+@media (max-width: 425px) {
   .headerFlex {
     padding: 0px;
     height: 28vh;
@@ -62,10 +56,10 @@ div a {
   width: 200px;
   height: 100px;
   margin-left: 120px;
-  margin-top: 14px;
+  margin-top: 25px;
 }
 
-@media (min-width: 415px) and (max-width: 769px) {
+@media (min-width: 425px) and (max-width: 769px) {
   .headerFlex .imgLogo {
     width: 150;
     height: 90;
@@ -73,7 +67,7 @@ div a {
   }
 }
 
-@media (max-width: 415px) {
+@media (max-width: 425px) {
   .headerFlex .imgLogo {
     width: 100px;
     height: 80px;
@@ -87,7 +81,7 @@ div a {
   transition: all 1s;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 425px) {
   .headerFlex .logoTrans {
     -webkit-transition: none;
     transition: none;
@@ -99,7 +93,7 @@ div a {
   height: 115px;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 425px) {
   .headerFlex .logoTrans:hover {
     width: 100px;
     height: 80px;
@@ -135,7 +129,7 @@ div a {
           align-items: center center;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 425px) {
   .headerFlex .barraInicio {
     margin-left: 17px;
   }
@@ -143,7 +137,13 @@ div a {
 
 .headerFlex .barraInicio .listMenu {
   margin: 4px;
-  margin-top: 35px;
+  margin-top: 50px;
+}
+
+@media (max-width: 425px) {
+  .headerFlex .barraInicio .listMenu {
+    margin-top: 0px;
+  }
 }
 
 .footer {
@@ -160,7 +160,7 @@ div a {
           justify-content: space-between;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 425px) {
   .footer .footerDiv {
     display: -ms-grid;
     display: grid;
@@ -225,6 +225,12 @@ div a {
           align-items: center;
 }
 
+@media (max-width: 425px) {
+  .bannerMenu {
+    height: 300px;
+  }
+}
+
 .bannerMenu h1 {
   font-size: 60px;
   text-transform: uppercase;
@@ -236,6 +242,13 @@ div a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 425px) {
+  .bannerMenu h1 a {
+    font-size: 45px;
+    margin-left: 35%px;
+  }
 }
 
 .bannerMenu p {
@@ -250,6 +263,12 @@ div a {
           justify-content: center;
 }
 
+@media (max-width: 425px) {
+  .bannerMenu p {
+    font-size: 35px;
+  }
+}
+
 .bannerMenu h2 {
   font-size: 40px;
   text-transform: uppercase;
@@ -257,16 +276,42 @@ div a {
   color: #ca8647;
 }
 
+@media (max-width: 415px) {
+  .bannerMenu h2 {
+    font-size: 25px;
+  }
+}
+
+.indexC {
+  height: 150%;
+}
+
+.indexC .margen {
+  margin-left: 12%;
+}
+
 .bannerNosotros {
   height: 600px;
   width: 100%;
-  background-image: url("Estilos/img/nosotros.jpeg");
+  background-image: url(./img/nosotros.JPEG);
   background-size: cover;
   background-position: center center;
 }
 
+@media (min-width: 425px) and (max-width: 769px) {
+  .bannerNosotros {
+    height: 500px;
+  }
+}
+
+@media (max-width: 425px) {
+  .bannerNosotros {
+    height: 400px;
+  }
+}
+
 .bannerNosotros h2 a {
-  font-size: 50px;
+  font-size: 60px;
   text-transform: uppercase;
   font-weight: 700;
   text-decoration: none;
@@ -284,7 +329,7 @@ div a {
 .bannerNosotros h3 {
   font-size: 40px;
   font-weight: 400;
-  color: #c48347;
+  color: #55310f;
   margin-top: 3%;
   display: -ms-grid;
   display: grid;
@@ -292,6 +337,12 @@ div a {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+}
+
+@media (max-width: 425px) {
+  .bannerNosotros h3 {
+    font-size: 30px;
+  }
 }
 
 .bannerNosotros p {
@@ -307,8 +358,23 @@ div a {
           justify-content: center;
 }
 
+@media (max-width: 425px) {
+  .bannerNosotros p {
+    margin-left: 20px;
+    text-align: center;
+  }
+}
+
 #prueba {
   margin-top: 3%;
+}
+
+.tituloArticle {
+  font-size: 45px;
+  color: #6d6c6a;
+  background-color: black;
+  margin: 0px;
+  text-align: center;
 }
 
 .menuHamb {
@@ -334,6 +400,13 @@ div a {
       grid-template-columns: 1fr 1fr 1fr;
 }
 
+@media (max-width: 425px) {
+  .menuHamb {
+    font-size: 14px;
+    font-weight: 200px;
+  }
+}
+
 .menuHamb #hamb1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -341,13 +414,19 @@ div a {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
   -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: articulo1;
 }
 
 .menuHamb #hamb1 .margenProd {
   margin: 8px;
+}
+
+@media (max-width: 425px) {
+  .menuHamb #hamb1 .margenProd {
+    font-size: 16px;
+  }
 }
 
 .menuHamb #hamb1 .imgHamb {
@@ -356,14 +435,35 @@ div a {
   cursor: pointer;
 }
 
+@media (max-width: 425px) {
+  .menuHamb #hamb1 .imgHamb {
+    width: 100px;
+    height: 75px;
+  }
+}
+
 .menuHamb #hamb1 .hambTrans {
   -webkit-transition: all 1s;
   transition: all 1s;
 }
 
+@media (max-width: 425px) {
+  .menuHamb #hamb1 .hambTrans {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
 .menuHamb #hamb1 .hambTrans:hover {
   width: 320px;
   height: 220px;
+}
+
+@media (max-width: 425px) {
+  .menuHamb #hamb1 .hambTrans:hover {
+    width: 100px;
+    height: 75px;
+  }
 }
 
 .menuHamb #hamb2 {
@@ -372,9 +472,9 @@ div a {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 2;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: articulo2;
 }
 
@@ -389,14 +489,35 @@ div a {
   cursor: pointer;
 }
 
+@media (max-width: 425px) {
+  .menuHamb #hamb2 .imgHamb {
+    width: 100px;
+    height: 75px;
+  }
+}
+
 .menuHamb #hamb2 .hambTrans {
   -webkit-transition: all 1s;
   transition: all 1s;
 }
 
+@media (max-width: 425px) {
+  .menuHamb #hamb2 .hambTrans {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
 .menuHamb #hamb2 .hambTrans:hover {
   width: 320px;
   height: 220px;
+}
+
+@media (max-width: 425px) {
+  .menuHamb #hamb2 .hambTrans:hover {
+    width: 100px;
+    height: 75px;
+  }
 }
 
 .menuHamb #hamb3 {
@@ -405,9 +526,9 @@ div a {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 3;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: articulo3;
 }
 
@@ -421,14 +542,35 @@ div a {
   cursor: pointer;
 }
 
+@media (max-width: 425px) {
+  .menuHamb #hamb3 .imgHamb {
+    width: 100px;
+    height: 75px;
+  }
+}
+
 .menuHamb #hamb3 .hambTrans {
   -webkit-transition: all 1s;
   transition: all 1s;
 }
 
+@media (max-width: 425px) {
+  .menuHamb #hamb3 .hambTrans {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
 .menuHamb #hamb3 .hambTrans:hover {
   width: 320px;
   height: 220px;
+}
+
+@media (max-width: 425px) {
+  .menuHamb #hamb3 .hambTrans:hover {
+    width: 100px;
+    height: 75px;
+  }
 }
 
 .tituloArticle {
@@ -455,17 +597,29 @@ div a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-      grid-template-areas: "articulo1 articulo2 articulo3" "articulo1 articulo2 articulo3" "articulo1 articulo2 articulo3";
+      grid-template-areas: "articulo1 articulo1 articulo1" "articulo2 articulo2 articulo2" "articulo3 articulo3 articulo3";
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
 }
 
+@media (max-width: 425px) {
+  .menuFritas {
+    font-size: 14px;
+    font-weight: 200px;
+  }
+}
+
 .menuFritas #fritas1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
   -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: articulo1;
 }
 
@@ -473,98 +627,218 @@ div a {
   margin: 8px;
 }
 
-.menuFritas #fritas1 .imgHamb {
+@media (max-width: 425px) {
+  .menuFritas #fritas1 .margenProd {
+    font-size: 16px;
+  }
+}
+
+.menuFritas #fritas1 .imgfry {
   width: 300px;
   height: 200px;
   cursor: pointer;
 }
 
-.menuFritas #fritas1 .hambTrans {
+@media (max-width: 425px) {
+  .menuFritas #fritas1 .imgfry {
+    width: 100px;
+    height: 75px;
+  }
+}
+
+.menuFritas #fritas1 .fryTrans {
   -webkit-transition: all 1s;
   transition: all 1s;
 }
 
-.menuFritas #fritas1 .hambTrans:hover {
+@media (max-width: 425px) {
+  .menuFritas #fritas1 .fryTrans {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.menuFritas #fritas1 .fryTrans:hover {
   width: 320px;
   height: 220px;
 }
 
+@media (max-width: 425px) {
+  .menuFritas #fritas1 .fryTrans:hover {
+    width: 100px;
+    height: 75px;
+  }
+}
+
 .menuFritas #fritas2 {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 2;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: articulo2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .menuFritas #fritas2 .margenProd {
   margin: 8px;
 }
 
-.menuFritas #fritas2 .imgHamb {
+.menuFritas #fritas2 .imgfry {
   width: 300px;
   height: 200px;
-  cursor: pointer;
   margin: 10px;
+  cursor: pointer;
 }
 
-.menuFritas #fritas2 .hambTrans {
+@media (max-width: 425px) {
+  .menuFritas #fritas2 .imgfry {
+    width: 100px;
+    height: 75px;
+  }
+}
+
+.menuFritas #fritas2 .fryTrans {
   -webkit-transition: all 1s;
   transition: all 1s;
 }
 
-.menuFritas #fritas2 .hambTrans:hover {
+@media (max-width: 425px) {
+  .menuFritas #fritas2 .fryTrans {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.menuFritas #fritas2 .fryTrans:hover {
   width: 320px;
   height: 220px;
 }
 
+@media (max-width: 425px) {
+  .menuFritas #fritas2 .fryTrans:hover {
+    width: 100px;
+    height: 75px;
+  }
+}
+
 .menuFritas #fritas3 {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 3;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: articulo3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .menuFritas #fritas3 .margenProd {
   margin: 8px;
 }
 
-.menuFritas #fritas3 .imgHamb {
+.menuFritas #fritas3 .imgfry {
   width: 300px;
   height: 200px;
   cursor: pointer;
 }
 
-.menuFritas #fritas3 .hambTrans {
+@media (max-width: 425px) {
+  .menuFritas #fritas3 .imgfry {
+    width: 100px;
+    height: 75px;
+  }
+}
+
+.menuFritas #fritas3 .fryTrans {
   -webkit-transition: all 1s;
   transition: all 1s;
 }
 
-.menuFritas #fritas3 .hambTrans:hover {
+@media (max-width: 425px) {
+  .menuFritas #fritas3 .fryTrans {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.menuFritas #fritas3 .fryTrans:hover {
   width: 320px;
   height: 220px;
 }
 
+@media (max-width: 425px) {
+  .menuFritas #fritas3 .fryTrans:hover {
+    width: 100px;
+    height: 75px;
+  }
+}
+
 .combos {
-  height: 600px;
   width: 100%;
-  background-image: url("img/fondodepapas.jpg");
   background-size: cover;
   background-position: center center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
+@media (max-width: 950px) {
+  .combos {
+    display: -ms-grid;
+    display: grid;
+    margin: 2px;
+  }
+}
+
+@media (min-width: 951px) {
+  .combos {
+    height: 600px;
+  }
+}
+
+.combos .picNos {
+  cursor: pointer;
+}
+
+@media (max-width: 950px) {
+  .combos .picNos {
+    height: 100;
+  }
+}
+
+.combos .fraNos {
+  text-align: center;
+}
+
 .textNosotros {
   margin: 10%;
+  letter-spacing: 2px;
   color: white;
-  font-size: 20px;
+  font-size: 23px;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .textNosotros {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 700px) {
+  .textNosotros {
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 0px;
+  }
 }
 
 .secNosotros {

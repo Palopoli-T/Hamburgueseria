@@ -1,6 +1,13 @@
 #prueba{
     margin-top: 3%;
 }
+.tituloArticle{
+    font-size: 45px;
+    color: rgb(109, 108, 106);
+    background-color: black;
+    margin: 0px;
+    text-align: center;
+}
 .menuHamb{
 	margin: 0px;
 	padding: 0px;
@@ -15,9 +22,17 @@
     "articulo1 articulo1 articulo1"
     "articulo2 articulo2 articulo2"
     "articulo3 articulo3 articulo3";
-;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+    //ipad/tablet
+	@media (min-width:425px) and (max-width: 769px){
+    }
+    //smartphone
+    @media (max-width: 425px){
+    font-size: 14px;
+    font-weight: 200px;
+    }
+
     #hamb1{
         display: flex;
         justify-content: space-around;
@@ -25,19 +40,34 @@
 
         .margenProd{
             margin: 8px;
+            //smartphone
+        @media (max-width: 425px){
+        font-size: 16px;
+        }
         }
 
         .imgHamb{
             width: 300px;
             height: 200px;
             cursor: pointer;
+            @media (max-width: 425px){
+                width: 100px;
+                height: 75px;
+            }
         }
         .hambTrans{
             transition: all 1s;
+            @media (max-width: 425px){
+            transition: none;
+            }
         }
         .hambTrans:hover{
             width: 320px;
             height: 220px;
+        @media (max-width: 425px){
+            width: 100px;
+            height: 75px;
+            }
         }
     }
         #hamb2{
@@ -50,21 +80,31 @@
         }
             
         .imgHamb{
-        width: 300px;
-        height: 200px;
-        margin: 10px;
-        cursor: pointer;
-
-         }
+            width: 300px;
+            height: 200px;
+            margin: 10px;
+            cursor: pointer;
+            @media (max-width: 425px){
+                width: 100px;
+                height: 75px;
+            }
+        }
          
 
         .hambTrans{
-        transition: all 1s;
-         }
+            transition: all 1s;
+            @media (max-width: 425px){
+            transition: none;
+            }
+        }
          
         .hambTrans:hover{
         width: 320px;
         height: 220px;
+        @media (max-width: 425px){
+            width: 100px;
+            height: 75px;
+            }
          }
     }
     #hamb3{
@@ -80,16 +120,27 @@
             width: 300px;
             height: 200px;
             cursor: pointer;
+            @media (max-width: 425px){
+                width: 100px;
+                height: 75px;
+            }
 
          }
         
          .hambTrans{
             transition: all 1s;
+            @media (max-width: 425px){
+            transition: none;
+            }
         }
        
         .hambTrans:hover{
             width: 320px;
             height: 220px;
+            @media (max-width: 425px){
+                width: 100px;
+                height: 75px;
+            }
          }
     }
 }
@@ -112,78 +163,128 @@
 	display: grid;
 	justify-content:flex-start;
         grid-template-areas: 
-        "articulo1 articulo2 articulo3"
-        "articulo1 articulo2 articulo3"
-        "articulo1 articulo2 articulo3";
+        "articulo1 articulo1 articulo1"
+        "articulo2 articulo2 articulo2"
+        "articulo3 articulo3 articulo3";
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr ;
+      //ipad/tablet
+	@media (min-width:425px) and (max-width: 769px){
+    }
+    //smartphone
+    @media (max-width: 425px){
+    font-size: 14px;
+    font-weight: 200px;
+    }
+
+        
 
         #fritas1{
+            display: flex;
+            justify-content: space-around;
             grid-area: articulo1;
-    
-            .margenProd{
+            
+        .margenProd{
                 margin: 8px;
+               //smartphone
+            @media (max-width: 425px){
+            font-size: 16px;
             }
-    
-            .imgHamb{
+        }
+            .imgfry{
                 width: 300px;
                 height: 200px;
                 cursor: pointer;
-
-            }
-            .hambTrans{
+                     @media (max-width: 425px){
+                        width: 100px;
+                        height: 75px;
+                        }
+                }                      
+            .fryTrans{
                 transition: all 1s;
+                @media (max-width: 425px){
+                transition: none;
+                }
             }
-            .hambTrans:hover{
+            .fryTrans:hover{
                 width: 320px;
                 height: 220px;
+                @media (max-width: 425px){
+                width: 100px;
+                height: 75px;
+                    }
             }
         }
             #fritas2{
-            grid-area: articulo2;
-    
-            .margenProd{
-                margin: 8px;
-            }
+                grid-area: articulo2;
+                display: flex;
+                justify-content: space-around;
+                .margenProd{
+                    margin: 8px;
+                }
                 
-            .imgHamb{
-            width: 300px;
-            height: 200px;
-            cursor: pointer;
-            margin: 10px;
-
-             }
-    
-            .hambTrans{
-            transition: all 1s;
-             }
-             
-            .hambTrans:hover{
-            width: 320px;
-            height: 220px;
-             }
-        }
-        #fritas3{
-            grid-area: articulo3;
-    
-            .margenProd{
-                margin: 8px;
-            }      
-            
-            .imgHamb{
-                width: 300px;
-                height: 200px;
-                cursor: pointer;
-
-             }
-            
-             .hambTrans{
-                transition: all 1s;
+                .imgfry{
+                    width: 300px;
+                    height: 200px;
+                    margin: 10px;
+                    cursor: pointer;
+                    @media (max-width: 425px){
+                        width: 100px;
+                        height: 75px;
+                    }
+                }
+                
+                .fryTrans{
+                    transition: all 1s;        
+                    @media (max-width: 425px){
+                    transition: none;
+                    }
+                
+                }
+                
+                .fryTrans:hover{
+                    width: 320px;
+                    height: 220px;
+                    @media (max-width: 425px){
+                        width: 100px;
+                        height: 75px;
+                        }
+                }
             }
-           
-            .hambTrans:hover{
-                width: 320px;
-                height: 220px;
-            }
-        }
-}
+            #fritas3{
+                grid-area: articulo3;
+                display: flex;
+                justify-content: space-around;
+                
+                .margenProd{
+                    margin: 8px;
+                }      
+                
+                .imgfry{
+                    width: 300px;
+                    height: 200px;
+                    cursor: pointer;
+                    @media (max-width: 425px){
+                        width: 100px;
+                        height: 75px;
+                   }
+
+                }
+                
+                .fryTrans{
+                    transition: all 1s;
+                    @media (max-width: 425px){
+                        transition: none;
+                        }
+                }
+                
+                .fryTrans:hover{
+                    width: 320px;
+                    height: 220px;
+                    @media (max-width: 425px){
+                        width: 100px;
+                        height: 75px;
+                    }
+                }
+        }   
+    }
