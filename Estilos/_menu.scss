@@ -1,27 +1,26 @@
+#prueba{
+    margin-top: 3%;
+}
 .menuHamb{
 	margin: 0px;
 	padding: 0px;
-	background-image: linear-gradient(to bottom, black, grey, grey, lightgrey, lightgrey, white);
+    background-image: linear-gradient(to bottom, black, rgb(71, 17, 17),rgb(100, 25, 25),rgb(124, 34, 34));
 	color: $colorMenu;
 	font-size: 20px;
 	text-align: center;
 	align-items: center;
 	display: grid;
-	justify-content: space-between;
+	justify-content:flex-start;
 	grid-template-areas: 
-	"none articulo1 articulo2 articulo3"
-	"none articulo1 articulo2 articulo3"
-	"none articulo1 articulo2 articulo3"
+    "articulo1 articulo1 articulo1"
+    "articulo2 articulo2 articulo2"
+    "articulo3 articulo3 articulo3";
 ;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    .tituloArticle{
-        font-size: 36px;
-        color: rgb(8, 8, 8);
-        margin: 14px;
-        text-align: center;
-    }
     #hamb1{
+        display: flex;
+        justify-content: space-around;
         grid-area: articulo1;
 
         .margenProd{
@@ -42,6 +41,8 @@
         }
     }
         #hamb2{
+        display: flex;
+        justify-content: space-around;
         grid-area: articulo2;
 
         .margenProd{
@@ -67,6 +68,8 @@
          }
     }
     #hamb3{
+        display: flex;
+        justify-content: space-around;
         grid-area: articulo3;
 
         .margenProd{
@@ -91,28 +94,30 @@
     }
 }
 //Papas fritas
+.tituloArticle{
+    font-size: 45px;
+    color: rgb(109, 108, 106);
+    background-color: black;
+    margin: 0px;
+    text-align: center;
+}
 .menuFritas{
-        background-image: linear-gradient(to top,black, grey, grey, lightgrey, lightgrey, white);
-        color: $colorMenu;
-        font-size: 25px;
-        text-align: center;
-        align-items: center;
-        display: grid;
+	margin: 0px;
+	padding: 0px;
+    background-image: linear-gradient(to top, black, black, rgb(71, 17, 17),rgb(100, 25, 25),rgb(124, 34, 34));
+	color: $colorMenu;
+	font-size: 20px;
+	text-align: center;
+	align-items: center;
+	display: grid;
+	justify-content:flex-start;
         grid-template-areas: 
-        "none articulo1 articulo2 articulo3"
-        "none articulo1 articulo2 articulo3"
-        "none articulo1 articulo2 articulo3";
+        "articulo1 articulo2 articulo3"
+        "articulo1 articulo2 articulo3"
+        "articulo1 articulo2 articulo3";
         grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        background-color: grey;
-        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
 
-        .tituloArticle{
-            font-size: 36px;
-            color: rgb(8, 8, 8);
-            margin: 14px;
-            text-align: center;
-        }
         #fritas1{
             grid-area: articulo1;
     
@@ -180,6 +185,5 @@
                 width: 320px;
                 height: 220px;
             }
-
-            }
+        }
 }
