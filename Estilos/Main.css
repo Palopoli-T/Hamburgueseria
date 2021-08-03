@@ -31,12 +31,6 @@ div a {
           justify-content: space-between;
 }
 
-@media (min-width: 425px) and (max-width: 769px) {
-  .headerFlex {
-    height: 17vh;
-  }
-}
-
 @media (max-width: 425px) {
   .headerFlex {
     padding: 0px;

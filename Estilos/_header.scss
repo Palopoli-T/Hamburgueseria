@@ -6,9 +6,7 @@
     display: flex;
     justify-content:space-between;
     //ipad/tablet
-    @media (min-width:425px) and (max-width: 769px){
-        height: 17vh;
-       
+    @media (min-width:425px) and (max-width: 769px){  
     }
     //smartphone
     @media (max-width: 425px){
