@@ -31,6 +31,12 @@ div a {
           justify-content: space-between;
 }
 
+@media (min-width: 425px) and (max-width: 769px) {
+  .headerFlex {
+    height: 20vh;
+  }
+}
+
 @media (max-width: 425px) {
   .headerFlex {
     padding: 0px;
@@ -65,7 +71,7 @@ div a {
   .headerFlex .imgLogo {
     width: 100px;
     height: 80px;
-    margin-top: 10px;
+    margin-top: 6px;
     margin-left: 150px;
   }
 }
@@ -137,6 +143,7 @@ div a {
 @media (max-width: 425px) {
   .headerFlex .barraInicio .listMenu {
     margin-top: 0px;
+    margin-left: 5px;
   }
 }
 
@@ -178,7 +185,7 @@ div a {
   .footer .burgerTam {
     width: 150px;
     height: 90px;
-    margin-left: 55px;
+    margin-left: 25%;
   }
 }
 
@@ -267,7 +274,7 @@ div a {
   font-size: 40px;
   text-transform: uppercase;
   font-weight: 400;
-  color: #ca8647;
+  color: #f1edea;
 }
 
 @media (max-width: 415px) {
@@ -287,7 +294,7 @@ div a {
 .bannerNosotros {
   height: 600px;
   width: 100%;
-  background-image: url(./img/nosotros1.jpeg);
+  background-image: url("img/nosotros1.jpg");
   background-size: cover;
   background-position: center center;
 }
@@ -323,7 +330,7 @@ div a {
 .bannerNosotros h3 {
   font-size: 40px;
   font-weight: 400;
-  color: #55310f;
+  color: #ffffff;
   margin-top: 3%;
   display: -ms-grid;
   display: grid;
@@ -857,5 +864,9 @@ div a {
   color: white;
   text-align: center;
   letter-spacing: 2px;
+}
+
+.tamContac p {
+  color: white;
 }
 /*# sourceMappingURL=Main.css.map */

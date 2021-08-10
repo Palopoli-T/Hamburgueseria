@@ -43,7 +43,7 @@
 		font-size: 40px;
 		text-transform: uppercase;
 		font-weight: 400;
-		color: #ca8647;
+		color: #f1edea;
 		//smartphone
 		@media (max-width: 415px){
 			font-size: 25px;
@@ -62,7 +62,7 @@
 .bannerNosotros{
 	height: 600px;
 	width: 100%;
-	background-image: url(./img/nosotros1.jpeg);
+	background-image: url('img/nosotros1.jpg');
 	background-size: cover;
 	background-position: center center;
 	
@@ -88,7 +88,7 @@
     h3{
 		font-size: 40px;
         font-weight: 400;
-        color: #55310f;
+        color: #ffffff;
         margin-top: 3%;
         display: grid;
         justify-content: center;
