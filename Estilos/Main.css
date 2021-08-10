@@ -33,7 +33,7 @@ div a {
 
 @media (min-width: 425px) and (max-width: 769px) {
   .headerFlex {
-    height: 20vh;
+    height: 35vh;
   }
 }
 
@@ -367,7 +367,7 @@ div a {
 }
 
 #prueba {
-  margin-top: 3%;
+  margin-top: 1.5%;
 }
 
 .tituloArticle {
